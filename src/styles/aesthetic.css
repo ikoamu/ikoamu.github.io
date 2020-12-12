@@ -24,8 +24,9 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -webkit-tap-highlight-color: transparent; /* 3*/
-  background-color: #bfbfbf;
+  background-color: #c774e8;
   font-family: Times, Times New Roman, Georgia, serif;
+  height: 100%;
 }
 
 /* Sections */
@@ -37,6 +38,7 @@ html {
 
 body {
   margin: 0;
+  height: 100%;
 }
 
 /**
