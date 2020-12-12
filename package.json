@@ -8,7 +8,7 @@
     "create-types-for-css-modules": "tcm src -c",
     "create-types-for-sass-modules": "tsm src --nameFormat camel",
     "css-watch": "tcm src -c --watch",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "eslint-init": "eslint --init",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,html,json,md}\" ",
     "lint": "eslint ./ --ext .js,.ts,.tsx,.jsx --format visualstudio --no-color --max-warnings 10 --report-unused-disable-directives --ignore-pattern 'public/*' --ignore-pattern 'coverage/*' --ignore-pattern 'node_modules/*' ",
@@ -20,24 +20,28 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "aesthetic-css": "1.0.1",
     "gatsby": "2.15.12",
     "gatsby-plugin-sass": "2.1.14",
     "gatsby-plugin-typescript": "2.1.7",
     "node-sass": "4.12.0",
     "react": "16.9.0",
-    "react-dom": "16.9.0"
+    "react-dom": "16.9.0",
+    "styled-components": "5.2.1"
   },
   "devDependencies": {
     "@types/node": "12.7.4",
     "@types/node-sass": "4.11.0",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.0",
+    "@types/styled-components": "5.1.4",
     "@typescript-eslint/eslint-plugin": "2.2.0",
     "@typescript-eslint/parser": "2.2.0",
     "eslint": "6.3.0",
     "eslint-config-prettier": "6.2.0",
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-react": "7.14.3",
+    "gh-pages": "3.1.0",
     "prettier": "1.18.2",
     "rimraf": "3.0.0",
     "stylelint": "10.1.0",
