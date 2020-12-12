@@ -4,7 +4,10 @@ export const Tab: React.FC = ({ children }) => {
   return (
     <div className="aesthetic-windows-95-tabbed-container">
       <div className="aesthetic-windows-95-tabbed-container-tabs">
-        <div className="aesthetic-windows-95-tabbed-container-tabs-button is-active">
+        <div
+          style={{ borderBottomColor: 'transparent', zIndex: 1 }}
+          className="aesthetic-windows-95-tabbed-container-tabs-button is-active"
+        >
           <button>Overview</button>
         </div>
         <div className="aesthetic-windows-95-tabbed-container-tabs-button">
@@ -18,7 +21,9 @@ export const Tab: React.FC = ({ children }) => {
         </div>
       </div>
 
-      <div className="aesthetic-windows-95-container">{children}</div>
+      <div style={{ zIndex: 0 }} className="aesthetic-windows-95-container">
+        {children}
+      </div>
     </div>
   );
 };

@@ -1,10 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
 import { Modal } from './modal';
 import { Tab } from './tab';
+import React from 'react';
+import styled from 'styled-components';
 
 const StyledOverview = styled.div`
-  width: 100%;
+  width: 902px;
+  margin-right: 16px;
 `;
 
 const ReposWrapper = styled.div``;
@@ -13,8 +14,11 @@ export const Overview: React.FC = () => {
   return (
     <StyledOverview>
       <Tab>
+        <div style={{ paddingLeft: 8, paddingRight: 8, marginBottom: 8, marginTop: 16 }}>
+          <h2 style={{ fontStyle: 'bold' }}>ikoamu/README.md</h2>
+        </div>
         <div style={{ paddingLeft: 8, paddingRight: 8, marginBottom: 24 }}>
-          <Modal title="ikoamu/README.md" hasHr>
+          <Modal title="" hasHr>
             🐄
           </Modal>
         </div>
@@ -48,6 +52,14 @@ export const Overview: React.FC = () => {
         </div>
         <div style={{ paddingLeft: 8, paddingRight: 8, marginBottom: 8, marginTop: 24 }}>
           <h2 style={{ fontStyle: 'bold' }}>2,560 contributions in the last year</h2>
+        </div>
+        <div style={{ paddingLeft: 8, paddingRight: 8, marginBottom: 24 }}>
+          <Modal title="" hasHr>
+            🐄
+          </Modal>
+        </div>
+        <div style={{ paddingLeft: 8, paddingRight: 8, marginBottom: 8, marginTop: 24 }}>
+          <h2 style={{ fontStyle: 'bold' }}>Contribution activity</h2>
         </div>
       </Tab>
     </StyledOverview>

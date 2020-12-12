@@ -1,1 +1,1 @@
-import "./src/styles/aesthetic.css"
+import './src/styles/aesthetic.css';
