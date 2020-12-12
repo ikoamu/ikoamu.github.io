@@ -5,10 +5,6 @@ const StyledHeader = styled.head`
   width: 100%;
 `;
 
-export const Header: React.FC = ({children}) => {
-  return (
-    <StyledHeader>
-      {children}
-    </StyledHeader>
-  );
-}
+export const Header: React.FC = ({ children }) => {
+  return <StyledHeader>{children}</StyledHeader>;
+};

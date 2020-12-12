@@ -17,7 +17,8 @@
     "start": "npm run develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
     "tsc-init": "tsc --init",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "aesthetic-css": "1.0.1",
@@ -39,6 +40,7 @@
     "@typescript-eslint/parser": "2.2.0",
     "eslint": "6.3.0",
     "eslint-config-prettier": "6.2.0",
+    "eslint-plugin-import": "2.22.1",
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-react": "7.14.3",
     "gh-pages": "3.1.0",
