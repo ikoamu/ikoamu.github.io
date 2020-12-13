@@ -1,5 +1,6 @@
 import { Modal } from './modal';
 import { Tab } from './tab';
+import { Contributions } from './contributions';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -54,9 +55,7 @@ export const Overview: React.FC = () => {
           <h2 style={{ fontStyle: 'bold' }}>2,560 contributions in the last year</h2>
         </div>
         <div style={{ paddingLeft: 8, paddingRight: 8, marginBottom: 24 }}>
-          <Modal title="" hasHr>
-            🐄
-          </Modal>
+          <Contributions />
         </div>
         <div style={{ paddingLeft: 8, paddingRight: 8, marginBottom: 8, marginTop: 24 }}>
           <h2 style={{ fontStyle: 'bold' }}>Contribution activity</h2>
